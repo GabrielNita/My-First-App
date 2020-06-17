@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "task-my-first-app",
+      "appliesTo": "/",
+      "type": "launch"
+    },
+    {
+      "taskName": "task-2bf6ea4859164d8e36afddcc5eebddba",
+      "appliesTo": "src/app/2bf6ea4859164d8e36afddcc5eebddba.jpg",
+      "type": "launch"
+    }
+  ]
+}

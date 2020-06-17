@@ -1,0 +1,102 @@
+
+
+
+
+<!--<app-toolbar></app-toolbar>-->
+
+
+
+
+<div>
+
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" [routerLink]="['home']" style="color:blueviolet ;" onmouseover="this.style.color = 'green';" onmouseout="this.style.color='blueviolet'"> HOME </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav" routerLinkActive="active">
+        <li class="active">
+          <a class="nav-link" [routerLink]="[{ outlets: { primary :['marvel'],
+                   prime:null } }]"><img src="assets/img/marvel-logo-34283.png" width="75" height="35" alt=""><span class="sr-only">(current)</span></a>
+        </li>
+        <li><a [routerLink]="['dc']"><img src="assets/img/dc-comics-logo-transparent-18.png" width="45" height="35" alt=""></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="assets/img/SUPERHERO-LOGO2.png" width="85" height="45" alt=""><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a routerLink="/marvel" routerLinkActive="active" onmouseover="this.style.color = 'green';" onmouseout="this.style.color='blueviolet'">Action</a></li>
+            <li><a href="#" onmouseover="this.style.color = 'green';" onmouseout="this.style.color='blueviolet'">Another action</a></li>
+            <li><a href="#" onclick="goToAboutPage();" onmouseover="this.style.color = 'green';" onmouseout="this.style.color='blueviolet'">Something else here!!</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#" onmouseover="this.style.color = 'green';" onmouseout="this.style.color='blueviolet'">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#" onmouseover="this.style.color = 'green';" onmouseout="this.style.color='blueviolet'">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!--<img src="assets/img/HeroesBackground.jpg" />-->
+  
+    
+ <!--<app-home></app-home>-->
+  <!--<router-outlet></router-outlet>-->
+  <!--<span>{{ title }} are here !!</span>-->
+  <!--<input type="text" [(ngModel)]="title">-->
+  
+    
+
+    <!--<p>Here are some links to help you get started:</p>-->
+
+  
+  <!--<app-servers></app-servers>-->
+    <!--<p [ngClass]="{Comics created: addNewComicsStatus === 'Comics created'}">
+    Comics Created and the name is {{addNewComicsStatus}}
+
+  </p>-->
+    <!--<ng-template #noComics>
+    som<p>
+      No comics was created !
+    </p>
+  </ng-template>
+  <h2>Next Steps</h2>
+  <p>What do you want to do next here ?</p>-->
+    <router-outlet></router-outlet>
+    <footer></footer>
+    
+    </div>
+
+
+
+
+
+

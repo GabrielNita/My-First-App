@@ -1,0 +1,44 @@
+
+.image {
+  /*height: 40em;*/
+  background-size:cover;
+  width: auto;
+  background-image: url('/assets/img/HeroesBackground.jpg');
+  /*background-position: 50% 50%;*/
+}
+h1 {
+  font-style: italic;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: blueviolet;
+  position: relative;
+  left: 700px;
+}
+/*.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}*/
+.row {
+  margin:auto;
+}
+.column {
+  flex: 25%;
+  /*max-width: 60%;*/
+  padding: 0 4px;
+}
+/*.column {
+  width : 25px ;
+  height: 25px ;
+  margin: 5px;
+}*/
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.p1 {
+  font-style: italic;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: aliceblue;
+  margin-left: 15px;
+}

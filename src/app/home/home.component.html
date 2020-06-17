@@ -1,0 +1,102 @@
+
+<div class="image">
+  <h1>Univers of Comics </h1>
+  <!--<img src="assets/img/HeroesBackground.jpg" />-->
+  <label>Comics Name :</label>
+  <input type="text" class="card-container" (input)="onUpdateComicsName($event)">
+  <input type="text" class="card-container" [(ngModel)]="comicsName"> <!--<hr>-->
+
+  <button class="btn btn-primary" [disabled]="!allowNewComics" (click)="onCreateComics()">
+
+    <svg _ngcontent-umm-c0="" class="material-icons" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg" style="margin-bottom:-7px; "><path _ngcontent-umm-c0="" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path></svg>
+    Add Comics
+  </button>
+  <button class="btn btn-danger" [disabled]="!allowNewComics" (click)="onDistroyComics()">
+    <svg _ngcontent-umm-c0="" class="material-icons" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg" style="margin-bottom:-7px; "><path _ngcontent-umm-c0="" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path></svg>
+    Remove Comics
+  </button>
+  <div class="col-xs-12" *ngIf="!loading">
+    <p *ngFor="let comics of comicses; let i = index" [ngStyle]="{backgroundColor:getColor()}">{{getComicsStatus()}}</p>
+    <p *ngIf="comicsCreated ; else noComics" [ngStyle]="{backgroundColor:getColor()}">{{getComicsStatus()}}</p>
+    <p *ngIf="comicsCreated ; else noComics" [ngStyle]="{backgroundColor:getColor()}">{{getComicsStatus()}}</p>
+    <p>{{getComicsStatus()}}!!!</p>
+    <p>{{getComicsStatus()}}!!!</p>
+    <app-servers *ngFor="let comics of comicses ; let i = index" [ngStyle]="{backgroundColor:getColor()}"></app-servers>
+  </div>
+  <h3 class="p1" > NEW ENTRIES </h3>
+  <div class=" row">
+    <div class="col-xs-3 ">
+      <img src="assets/img/cover/Cover1.jpg" style="max-width: 100%;" />
+    </div>
+    <div class="col-xs-3 ">
+      <img src="assets/img/cover/Cover2.jpg" style="max-width: 100%;" />
+    </div>
+    <div class="col-xs-3 ">
+      <img src="assets/img/cover/Cover3.jpg" style="max-width: 100%;" />
+    </div>
+    <div class="col-xs-3 ">
+      <img src="assets/img/cover/Cover4.jpg" style="max-width: 100%;" />
+    </div>
+  </div>
+  <br />
+  <div class=" row">
+    <div class="col-xs-3 ">
+      <img src="assets/img/cover/Cover5.jpg" style="max-width: 100%;" />
+    </div>
+    <div class="col-xs-3 ">
+      <img src="assets/img/cover/Cover6.jpg" style="max-width: 100%;" />
+    </div>
+    <div class="col-xs-3 ">
+      <img src="assets/img/cover/Cover7.jpg" style="max-width: 100%;" />
+    </div>
+    <div class="col-xs-3 ">
+      <img src="assets/img/cover/Cover8.jpg" style="max-width: 100%;" />
+    </div>
+  </div>
+  <br />
+  <div class=" row">
+    <div class="col-xs-3 ">
+      <img src="assets/img/cover/Cover9.jpg" style="max-width: 100%;" />
+    </div>
+    <div class="col-xs-3 ">
+      <img src="assets/img/cover/Cover10.jpg" style="max-width: 100%;" />
+    </div>
+    <div class="col-xs-3 ">
+      <img src="assets/img/cover/Cover11.jpg" style="max-width: 100%;" />
+    </div>
+    <div class="col-xs-3 ">
+      <img src="assets/img/cover/Cover12.jpg" style="max-width: 100%;" />
+    </div>
+  </div>
+  <br />
+  <div class=" row">
+    <div class="col-xs-3 ">
+      <img src="assets/img/cover/Cover1.jpg" style="max-width: 100%;" />
+    </div>
+    <div class="col-xs-3 ">
+      <img src="assets/img/cover/Cover2.jpg" style="max-width: 100%;" />
+    </div>
+    <div class="col-xs-3 ">
+      <img src="assets/img/cover/Cover3.jpg" style="max-width: 100%;" />
+    </div>
+    <div class="col-xs-3 ">
+      <img src="assets/img/cover/Cover4.jpg" style="max-width: 100%;" />
+    </div>
+  </div>
+  <br />
+  <div class=" row">
+    <div class="col-xs-3 ">
+      <img src="assets/img/cover/Cover5.jpg" style="max-width: 100%;" />
+    </div>
+    <div class="col-xs-3 ">
+      <img src="assets/img/cover/Cover6.jpg" style="max-width: 100%;" />
+    </div>
+    <div class="col-xs-3 ">
+      <img src="assets/img/cover/Cover7.jpg" style="max-width: 100%;" />
+    </div>
+    <div class="col-xs-3 ">
+      <img src="assets/img/cover/Cover8.jpg" style="max-width: 100%;" />
+    </div>
+  </div>
+</div>
+

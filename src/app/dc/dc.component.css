@@ -1,0 +1,37 @@
+.text-block {
+  position: absolute;
+  bottom: 190px;
+  right: 920px;
+  /*background-color: black;*/
+  font-family: "Times New Roman", Times, serif;
+  
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+.container {
+  position: relative;
+  right :180px;
+}
+.buton1 {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  /*right: 1px;*/
+  /*width: 430px;
+  height: 60px;*/
+  background-color: #1c5567;
+}
+a.buton1:hover, a.buton1:active {
+  font-size: 200%;
+  color: red;
+  /*background-color:aliceblue;*/
+  
+}
+
+.p1 {
+  font-style: italic;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  /*background-color: aliceblue;*/
+}
